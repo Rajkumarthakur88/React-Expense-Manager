@@ -33,8 +33,8 @@ function Form() {
     }, [Edit])
     return (
         <form onSubmit={(e) => handleSubmit(e)}>
-            <input type="number" value={amount} placeholder="Enter Your Amount" onChange={(e) => setAmount(e.target.value)} />
-            <input type="text" value={text} placeholder="Enter Your Transaction" onChange={(e) => setText(e.target.value)} />
+            <input type="number" value={amount} required placeholder="Enter Your Amount" onChange={(e) => setAmount(e.target.value)} />
+            <input type="text" value={text} required placeholder="Enter Your Transaction" onChange={(e) => setText(e.target.value)} />
             <button className="submit-btn">SUBMIT</button>
         </form>
     )
